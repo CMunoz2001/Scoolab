@@ -1,0 +1,20 @@
+# Normaliza los finales de línea a LF para todos los archivos de texto
+* text=auto eol=lf
+
+# Especifica cómo Git debe interpretar ciertos tipos de archivo
+*.blade.php diff=html
+*.css diff=css
+*.html diff=html
+*.md diff=markdown
+*.php diff=php
+
+# Ignora ciertos archivos/directorios al exportar (ejemplo: cuando se empaqueta el repositorio)
+.github export-ignore
+CHANGELOG.md export-ignore
+.styleci.yml export-ignore
+
+# Forzar finales de línea para archivos específicos
+*.sh text eol=lf
+*.bat text eol=crlf
+*.json text eol=lf
+*.yml text eol=lf
